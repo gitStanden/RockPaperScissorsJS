@@ -46,7 +46,8 @@ function playRound(playerSelection,computerSelection){
 
 function game(){
     for (let i = 0; i < 5; i++) {
-        let playerSelection = prompt("Please enter \'ROCK\', \'PAPER\' or \'SCISSORS\': ").toUpperCase();
+        let round = i + 1;
+        let playerSelection = prompt("Round " + round + "\nPlease enter \'ROCK\', \'PAPER\' or \'SCISSORS\': ").toUpperCase();
         let computerSelection = getComputerChoice();
         playRound(playerSelection, computerSelection);
     };
