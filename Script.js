@@ -4,4 +4,9 @@ function getComputerChoice(){
     console.log(rps[randomChoice]);
 };
 
-getComputerChoice();
+function playerSelection(){
+    const selection = prompt("Please enter \'Rock\', \'Paper\' or \'Scissors\': ").toLowerCase();
+    console.log(selection);
+};
+
+playerSelection();
